@@ -7,6 +7,7 @@
  - utter_dulexroom_details
 * book_room_now
    - book_room_form 
+   - action_book_rooms_details
 
 
 ## book_room_simple_details
@@ -18,6 +19,7 @@
  - utter_simpleroom_details
 * book_room_now
    - book_room_form
+   - action_book_rooms_details
 * goodbye
  - utter_goodbye
 
@@ -28,5 +30,6 @@
  - utter_book_rooms
 * book_room_now: 
     - book_room_form 
+    - action_book_rooms_details
 * goodbye
  - utter_goodbye

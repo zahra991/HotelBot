@@ -9,14 +9,100 @@ actions:
 forms: 
   - book_room_form
 
-  intents: 
-  - greet
-  - goodbye
-  - book_rooms
-  - dulex_room_details
-  - simpleroom_details
-  - book_room_now  
+intents: 
+ - greet
+ - goodbye
+ - book_rooms
+ - dulex_room_details
+ - simpleroom_details
+ - book_room_now  
 
+slots:
+  adults: 
+    auto_fill: false
+    type: unfeaturized
+  check_in: 
+    auto_fill: false
+    type: unfeaturized
+  check_out: 
+    auto_fill: false
+    type: unfeaturized
+  child: 
+    auto_fill: false
+    type: unfeaturized
+  email: 
+    auto_fill: false
+    type: unfeaturized
+  name: 
+    auto_fill: false
+    type: unfeaturized
+  phno: 
+    auto_fill: false
+    type: unfeaturized
+  room: 
+    auto_fill: false
+    type: unfeaturized
+
+templates:
+  utter_ask_check_in: 
+    - 
+      text: "On which date would you like to check in?"
+  utter_ask_check_out: 
+    - 
+      text: "When would you like to checkout?"
+  utter_ask_adults: 
+    - 
+      buttons: 
+        - 
+          payload: 1
+          title: 1
+        - 
+          payload: 2
+          title: 2
+        - 
+          payload: 3
+          title: 3
+      text: "How many adults (above 12 years old) are staying?"
+
+  utter_ask_child: 
+    - 
+      buttons: 
+        - 
+          payload: 0
+          title: 0
+        - 
+          payload: 1
+          title: 1
+        - 
+          payload: 2
+          title: 2
+      text: "How many children (below 12 years old) are staying?"
+
+  utter_ask_room: 
+    - 
+      buttons: 
+        - 
+          payload: 1
+          title: 1
+        - 
+          payload: 2
+          title: 2
+        - 
+          payload: 3
+          title: 3
+      text: "How many rooms would you like to book?"
+
+  utter_ask_name: 
+    - 
+      text: "Please provide us your name"
+  utter_ask_phno: 
+    - 
+      text: "Please provide us your phone number"
+
+  utter_ask_email: 
+    - 
+      text: "Please provide us your email"
+  
   utter_greet: 
      - text: "Hi , Welcome to Hotel LimeRick!"
 
