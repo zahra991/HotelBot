@@ -53,3 +53,59 @@
  - utter_late
 * goodbye
  - utter_goodbye
+
+## restaurant
+* greet
+ - utter_greet
+* restaurant
+ - utter_restaurant
+* goodbye
+ - utter_goodbye
+
+## faqbreakfastmenu
+* greet
+ - utter_greet
+* faq
+ - utter_faq_prompt 
+* faqbreakfast
+ - utter_faqbreakfast
+
+## cancellationplicyfaq
+* greet
+ - utter_greet
+* faq
+ - utter_faq_prompt 
+* faqcancellationpolicy
+ - utter_cancellationpolicy  
+
+## faqcheckintime
+* greet
+ - utter_greet
+* faq
+ - utter_faq_prompt 
+* faqcheckintime
+ - utter_checkintime
+
+## faqcheckouttime
+* greet
+ - utter_greet
+* faq
+ - utter_faq_prompt 
+* faqcheckouttime
+ - utter_checkouttime 
+
+## breakfasttime
+* greet
+ - utter_greet
+* faq
+ - utter_faq_prompt 
+* faqbreakfasttime
+ - utter_breakfasttime
+
+## contactnumber
+* greet
+ - utter_greet
+* faq
+ - utter_faq_prompt 
+* faqcontactnumber 
+ - utter_contactnumber  

@@ -1,10 +1,11 @@
 
+from typing import Dict, Text, Any, List, Union, Optional
 
-from typing import Any, Text, Dict, List
-
-from rasa_sdk import Action, Tracker
+from rasa_sdk import Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
+from rasa_sdk import Action
+from rasa_sdk.forms import FormAction
 
 class BookRoomForm(FormAction):
  def name(self):
@@ -46,7 +47,7 @@ class BookRoomForm(FormAction):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) -> List[Dict]:
-    dispatcher.utter_message("Your booking details are here")   
+    dispatcher.utter_message("Your booking details are here")  
     return []
 
 class BookRoomsDetails(Action):

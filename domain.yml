@@ -7,10 +7,22 @@ actions:
   - utter_query
   - utter_quick
   - utter_late
+  - utter_faqbreakfast
+  - utter_cancellationpolicy
+  - utter_cancelreservation
+  - utter_checkintime
+  - utter_checkouttime
+  - utter_breakfasttime
+  - utter_faq_prompt
+  - utter_contactnumber
+  - utter_restaurant
   - utter_goodbye
 
 forms: 
   - book_room_form
+
+policies:
+  - name: "FormPolicy"
 
 intents: 
  - greet
@@ -22,11 +34,23 @@ intents:
  - clean_rightnow
  - schedule_clean
  - clean_room
+ - faqbreakfast
+ - faqcancellationpolicy
+ - faqcancelreservation
+ - faqcheckintime
+ - faqcheckouttime
+ - faqbreakfasttime
+ - faqcontactnumber
+ - faq
+ - restaurant
 
 entities:
   - time
 
 slots:
+  time:
+    type: text
+    auto_fill: true
   adults: 
     auto_fill: false
     type: unfeaturized
@@ -122,7 +146,7 @@ templates:
           payload: "/dulex_room_details" 
           title: "Dulex Rooms"
         - 
-          payload: "/simple_details"
+          payload: "/simpleroom_details"
           title: "Simple Rooms"
       text: "Which type of rooms would you like to book?"
 
@@ -141,6 +165,41 @@ templates:
 
    utter_late:
     - text: "Okay , I'll get your room cleaned after {time}."
+
+  utter_breakfasttime: 
+    - text: "Breakfast is served from 7am to 10am, every day."
+  
+  utter_cancellationpolicy: 
+    - 
+      text: "If your travel plans change, you can cancel or modify your reservation in accordance with the hotel's cancellation policy as stated during the reservation process."
+  
+  utter_cancelreservation:
+    -
+      text: "On the Reservations page, under the heading ‘View, Change or Cancel a Reservation,’ enter your confirmation number, and either the last name on the reservation or the last four digits of the credit card used to make the reservation."
+  
+    utter_checkintime: 
+    - 
+      text: "The check-in time is after 12 p.m. Let us know your arrival time in case you schedule an early check-in we'll do our best to make your room available."
+  
+  utter_checkouttime: 
+    - 
+      text: "Check-out time is 12.00 noon."
+  
+  utter_contactnumber: 
+    - 
+      text: "The hotel can be contacted directly on 0333 444 5555."
+
+  utter_faq_prompt: 
+    - 
+      text: "OK.you can ask me anything you would like to know"
+  
+  utter_faqbreakfast: 
+    - text: |-
+          Buffet breakfast, fee from 899.00 INR 
+          Continental breakfast, fee from 475.00 INR 
+          Full American breakfast, fee from 625.00 INR
+  utter_restaurant:
+    - text: "Yes, the hotel has a restaurant called the Zephyr Bar. With our menu we strive to reflect the historic art and the spirit of our neighborhood by offering a glimpse into what makes our area unique."
   
   utter_goodbye:
     - text: "Pleasure to help you. Have a good day"
