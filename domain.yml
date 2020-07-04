@@ -4,6 +4,9 @@ actions:
   - utter_dulexroom_details
   - utter_simpleroom_details
   - action_book_rooms_details
+  - utter_query
+  - utter_quick
+  - utter_late
   - utter_goodbye
 
 forms: 
@@ -16,6 +19,12 @@ intents:
  - dulex_room_details
  - simpleroom_details
  - book_room_now  
+ - clean_rightnow
+ - schedule_clean
+ - clean_room
+
+entities:
+  - time
 
 slots:
   adults: 
@@ -124,6 +133,15 @@ templates:
   utter_simpleroom_details: 
     - text: "This room has 14 square meters and is equipped with a Small double bed, an air-condition, flat screen TV,  Cable TV with a wide selection of channels, FREE HI-speed internet access, a direct dial telephone, work desk, bathroom amenities. If you want to book this room enter book now."
 
+  utter_query:
+    - text: "When would you like to get your room cleaned?"
+
+  utter_quick:
+    - text: "Okay, I'll get your room cleaned right away"
+
+   utter_late:
+    - text: "Okay , I'll get your room cleaned after {time}."
+  
   utter_goodbye:
     - text: "Pleasure to help you. Have a good day"
 

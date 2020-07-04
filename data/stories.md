@@ -33,3 +33,23 @@
     - action_book_rooms_details
 * goodbye
  - utter_goodbye
+
+## schedule_cleaning_right_away
+* greet
+ - utter_greet
+* clean_room
+ - utter_query
+* clean_rightnow
+ - utter_quick
+* goodbye
+ - utter_goodbye
+
+## schedule_cleaning
+* greet
+ - utter_greet
+* clean_room
+ - utter_query
+* schedule_clean
+ - utter_late
+* goodbye
+ - utter_goodbye

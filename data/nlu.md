@@ -32,6 +32,29 @@
 - book room
 - Book Room
 
+## intent: clean_room
+- I want to have my room cleaned
+- room cleaning
+- room service
+- please clean my room
+- Can you send someone for room service
+
+## intent: clean_rightnow
+- Could you send someone right now
+- Right now
+- As soon as possible
+- asap
+- Can you arrange the service right away
+
+## intent: schedule_clean
+- could you send someone after [2 hours](time)
+- can you send someone after [1 hour](time)
+- could you send someone after [30 mins](time)
+- could you send someone after [1hr 30mins](time)
+- can you send someone after [2hr 30mins](time)
+- after [2 hours](time)
+- after [1 hour](time)
+
 ## intent:goodbye
 - thank you
 - bye
