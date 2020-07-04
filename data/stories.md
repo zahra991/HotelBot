@@ -1,31 +1,32 @@
-## happy path
+## book_room_dulex_details
 * greet
-  - utter_greet
-* mood_great
-  - utter_happy
+ - utter_greet
+* book_rooms
+ - utter_book_rooms
+* dulex_room_details
+ - utter_dulexroom_details
+* book_room_now
+   - book_room_form 
 
-## sad path 1
+
+## book_room_simple_details
 * greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
-* affirm
-  - utter_happy
-
-## sad path 2
-* greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
-* deny
-  - utter_goodbye
-
-## say goodbye
+ - utter_greet
+* book_rooms
+ - utter_book_rooms
+* simpleroom_details
+ - utter_simpleroom_details
+* book_room_now
+   - book_room_form
 * goodbye
-  - utter_goodbye
+ - utter_goodbye
 
-## bot challenge
-* bot_challenge
-  - utter_iamabot
+## book_room_now
+* greet
+ - utter_greet
+* book_rooms
+ - utter_book_rooms
+* book_room_now: 
+    - book_room_form 
+* goodbye
+ - utter_goodbye

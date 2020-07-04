@@ -6,51 +6,38 @@
 - good evening
 - hey there
 
+## intent:dulex_room_details
+- Read More
+- Dulex Room
+- dulex room
+
+## intent:simpleroom_details
+- Read More
+- simple Suite
+- Simple suite
+
+## intent:book_room_now
+- Book Now
+- BOOK NOW
+- book now
+
+## intent:book_rooms
+- can i book a room
+- I want to book a room
+- can you help me book a room
+- room booking
+- room reservation
+- book rooms
+- Book Rooms
+- book room
+- Book Room
+
 ## intent:goodbye
+- thank you
 - bye
 - goodbye
-- see you around
-- see you later
+- thanks
+- thank you so much
 
-## intent:affirm
-- yes
-- indeed
-- of course
-- that sounds good
-- correct
 
-## intent:deny
-- no
-- never
-- I don't think so
-- don't like that
-- no way
-- not really
 
-## intent:mood_great
-- perfect
-- very good
-- great
-- amazing
-- wonderful
-- I am feeling very good
-- I am great
-- I'm good
-
-## intent:mood_unhappy
-- sad
-- very sad
-- unhappy
-- bad
-- very bad
-- awful
-- terrible
-- not very good
-- extremely sad
-- so sad
-
-## intent:bot_challenge
-- are you a bot?
-- are you a human?
-- am I talking to a bot?
-- am I talking to a human?

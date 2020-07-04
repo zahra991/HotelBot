@@ -1,32 +1,44 @@
-intents:
+actions: 
+  - utter_greet
+  - utter_book_rooms
+  - utter_dulexroom_details
+  - utter_simpleroom_details
+  - action_book_rooms_details
+  - utter_goodbye
+
+forms: 
+  - book_room_form
+
+  intents: 
   - greet
   - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+  - book_rooms
+  - dulex_room_details
+  - simpleroom_details
+  - book_room_now  
 
-responses:
-  utter_greet:
-  - text: "Hey! How are you?"
+  utter_greet: 
+     - text: "Hi , Welcome to Hotel LimeRick!"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_book_rooms: 
+    - 
+      buttons: 
+        - 
+          payload: "/dulex_room_details" 
+          title: "Dulex Rooms"
+        - 
+          payload: "/simple_details"
+          title: "Simple Rooms"
+      text: "Which type of rooms would you like to book?"
 
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
+  utter_dulexroom_details: 
+    - 
+      text: "Deluxe rooms at LimeRick offers 15% Discount on Food & Soft Beverage and Spa are smartly designed, spacious abodes with top-of-the-line facilities, generous bathrooms and seamless connectivity. If you want to book this room enter book now."
+  
+  utter_simpleroom_details: 
+    - text: "This room has 14 square meters and is equipped with a Small double bed, an air-condition, flat screen TV,  Cable TV with a wide selection of channels, FREE HI-speed internet access, a direct dial telephone, work desk, bathroom amenities. If you want to book this room enter book now."
 
   utter_goodbye:
-  - text: "Bye"
+    - text: "Pleasure to help you. Have a good day"
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  
