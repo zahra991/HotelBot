@@ -25,24 +25,41 @@ policies:
   - name: "FormPolicy"
 
 intents: 
- - greet
- - goodbye
- - book_rooms
- - dulex_room_details
- - simpleroom_details
- - book_room_now  
- - clean_rightnow
- - schedule_clean
- - clean_room
- - faqbreakfast
- - faqcancellationpolicy
- - faqcancelreservation
- - faqcheckintime
- - faqcheckouttime
- - faqbreakfasttime
- - faqcontactnumber
- - faq
- - restaurant
+ - greet:
+   - triggers: utter_greet
+ - goodbye:
+  - triggers: utter_goodbye
+ - book_rooms:
+  - triggers: utter_book_rooms
+ - dulex_room_details:
+  - triggers: utter_dulexroom_details
+ - simpleroom_details:
+  - triggers: utter_simpleroom_details
+ - book_room_now 
+ - clean_rightnow:
+   - triggers: utter_quick
+ - schedule_clean:
+   - triggers: utter_late
+ - clean_room:
+   - triggers: utter_query
+ - faqbreakfast:
+   - triggers: utter_faqbreakfast
+ - faqcancellationpolicy:
+   - triggers: utter_cancellationpolicy
+ - faqcancelreservation:
+   - triggers: utter_cancelreservation
+ - faqcheckintime:
+   - triggers: utter_checkintime
+ - faqcheckouttime:
+   - triggers: utter_checkouttime
+ - faqbreakfasttime:
+   - triggers: utter_breakfasttime
+ - faqcontactnumber:
+   - triggers: utter_contactnumber
+ - faq: 
+   - triggers: utter_faq_prompt
+ - restaurant:
+   - triggers: utter_restaurant
 
 entities:
   - time
